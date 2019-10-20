@@ -1,13 +1,23 @@
-package home.test.entity;
+package home.test.model;
 
+import javax.persistence.*;
 import java.io.Serializable;
 
+@Entity
+@Table(name = "user")
 public class User implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
+    @Id
+    @GeneratedValue
+    @Column(name = "USER_ID")
     private Integer userId;
+
+    @Column(name = "FIRST_NAME")
     private String firstName;
+
+    @Column(name = "LAST_NAME")
     private String lastName;
 
     public User(String firstName, String lastName) {

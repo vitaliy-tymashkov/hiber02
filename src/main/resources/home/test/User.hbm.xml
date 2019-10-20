@@ -3,7 +3,7 @@
         "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 
 <hibernate-mapping>
-    <class name="home.test.entity.User" table="user" catalog="home_test">
+    <class name="home.test.model.User" table="user" catalog="home_test">
         <id name="userId" type="java.lang.Integer">
             <column name="USER_ID" />
             <generator class="identity" />
